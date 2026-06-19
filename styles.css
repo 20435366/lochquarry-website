@@ -1,0 +1,75 @@
+header {
+    
+    top: 0;
+
+}
+
+body {
+    font-family: Arial;
+    font-size: large;
+    background-color: #1ac58c;
+    text-align: center;
+}
+
+#featured-image {
+  width: 80%;
+  max-width: 600px;
+  border: 8px solid white;
+  border-radius: 12px;
+  text-align: center;
+  font-size: xx-large
+}
+
+.thumbnail {
+  width: 15vw;
+  border: 4px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* the top  */
+.topnav {
+    background-color: #233a2a;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: middle;
+  }
+  
+  /* Style the image inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    
+    padding: 0px 46px;
+    text-decoration: none;
+    font-size: 36px;
+  }
+  
+  
+  /* Style the links*/
+  .topnav b {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    
+    padding: 20px 46px;
+    text-decoration: none;
+    font-size: 36px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #9fe677;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+    <header>
+        <img src="images/lochquarry-banner.png" alt="Lochquarry Outdoor Centre logo" style="width:98.4vw">
+        <p>
+            <div class="topnav" onclick="changeBackground">
+                <b><img id="darkmodeicon"  src="images/darkmode.png" onclick="changeBackground('black')" alt="Lochquarry Outdoor Centre logo" style="height:32px"></b>
+                <a href="index.html"><b>Home</b></a>
+                <a href="land.html"><b>Land</b></a>
+                <a href="water.html"><b>Water</b></a>
+                <a href="rope.html"><b>Rope</b></a>
+                <a href="reviews.html"><b>Reviews</b></a>
+            </div>
+    </header>
+
+
+        <h1>Reviews</h1>
+        <p>Here is a list of some more reviews people have written. Please find us on <a href="https://www.google.com/maps">Google maps</a> to leave a review of your own.</p>
+
+        <main>
+
+            <p>‘The kids had a ball and didn’t want to leave’ - Mr Evans, PE teacher</p>
+
+            <p>‘I would definitely come back’ - Kelly, aged 9</p>
+
+            <p>‘Five stars, it was great’ - Joe, aged 14</p>
+
+            <img src="images/nature/nature_3.jpg" alt="Photograph of a highland coo." style="width:60vw">
+            
+        </main>
+
+        <script>
+            function changeImage(imageFile, StaffName, StaffPosition, StaffDescription, StaffActivity) {
+                document.getElementById("featured-image").src = imageFile;
+                document.getElementById("StaffName").textContent = StaffName;
+                document.getElementById("StaffPosition").textContent = StaffPosition;
+                document.getElementById("StaffDescription").textContent = StaffDescription;
+                document.getElementById("StaffActivity").textContent = StaffActivity;
+            }
+
+            function changeBackground(color) {
+
+                if (document.body.style.background != color)
+                {
+                    document.getElementById("darkmodeicon").src = "images/lightmode.png";
+                    
+                    document.body.style.background = color;
+
+                    var all = document.getElementsByTagName("p");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "white";
+                    }
+
+                    var all = document.getElementsByTagName("h1");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "white";
+                    }
+
+                    var all = document.getElementsByTagName("h2");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "white";
+                    }
+                } else {
+                    document.body.style.background = "#1ac58c";
+
+                    document.getElementById("darkmodeicon").src = "images/darkmode.png";
+
+                    var all = document.getElementsByTagName("p");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "black";
+                    }
+
+                    var all = document.getElementsByTagName("h1");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "black";
+                    }
+
+                    var all = document.getElementsByTagName("h2");
+
+                    for (var i=0, max=all.length; i < max; i++) {
+                    all[i].style.color = "black";
+                    }
+                }
+            }
+
+            
+        </script>
+
+
+
+
+
+</html>
